@@ -1,0 +1,9 @@
+- name: Выполнение ДЗ2 — DevOps2 — СоломоновЕЮ
+  hosts: vm1
+  become: true
+
+  vars_files:
+  - ./inventories/main/group_vars/vault.yml
+
+  roles:
+    - postgres

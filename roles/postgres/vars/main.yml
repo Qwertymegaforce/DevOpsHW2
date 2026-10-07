@@ -1,0 +1,5 @@
+__postgres_data_dir: /data/postgres/data
+
+__postgres_user: postgres
+
+__postgres_pgctl_dir: /usr/lib/postgresql/18/bin/pg_ctl

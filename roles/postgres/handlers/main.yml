@@ -1,0 +1,10 @@
+- name: psql restart
+  ansible.builtin.service:
+    name: postgresql
+    state: restarted
+
+- name: p_ex restart
+  become: true
+  ansible.builtin.systemd:
+    name: prometheus-postgres-exporter
+    state: restarted

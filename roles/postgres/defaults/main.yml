@@ -1,0 +1,16 @@
+postgres__config:
+  listen_addresses: "'*'"
+  port: 5432
+  max_connections: 100
+
+postgres__pg_hba:
+    - type: host
+      database: all
+      user: all
+      address: "0.0.0.0/0"
+      method: trust
+
+postgres__databases:
+  - test_db_1
+  - test_db_2
+  - test_db_3
